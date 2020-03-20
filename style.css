@@ -1,0 +1,80 @@
+html {
+    scroll-behavior: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+.dropbelow {
+    animation-name: down;
+    animation-duration: 2s;
+    position: relative;
+}
+
+.goup {
+    animation-name: up;
+    animation-duration: 2s;
+    position: relative;
+}
+
+.goup2 {
+    animation-name: up;
+    animation-duration: 1.5s;
+    position: relative;
+}
+
+@keyframes down {
+    0% { top: -250px; }
+    100% { top: 0px; }
+}
+
+@keyframes up {
+    0% { top: 1000px; }
+    100% { top: 0px; }
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexbox img {
+    width: 33%;
+    align-self: center;
+}
+
+.biden {
+    width: 25%;
+}
+.buttigieg {
+    width: 25%;
+}
+.other {
+    width: 25%;
+}
