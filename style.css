@@ -149,7 +149,6 @@ body {
 }
 
 ul {
-    margin: 250px auto 0;
     padding: 0;
     width: 100%;
     display: flex;
@@ -161,7 +160,6 @@ ul li {
 ul li .imageBox {
     width: 100%;
     box-sizing: content-box;
-    padding: 10px;
 }
 ul li .imageBox figure {
     position: relative;
@@ -172,17 +170,17 @@ ul li .imageBox figure {
 ul li .imageBox figure img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 ul li .imageBox figure figcaption {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -30%);
     left: 0px;
     right: 0px;
     bottom: 0px;
     background-color: rgba(255,255,255,0.7);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     opacity: 0;
     transition: 1s;
     transform: translateY(20px);
@@ -193,19 +191,20 @@ ul li .imageBox:hover figure figcaption {
 }
 ul li .imageBox figure figcaption h1 {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-size: 24px;
+    font-weight: 500;
 }
 ul li .imageBox figure figcaption p {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-size: 14px;
 }
 ul li .imageBox figure figcaption a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 15px;
     font-size: 24px;
-    background: red;
+    background: blue;
     color: white;
     text-decoration: none;
     border-radius: 20px;
